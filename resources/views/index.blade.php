@@ -19,7 +19,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">765</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">205</h1>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">1205</h1>
+                            <h1 class="mb-0" data-toggle="counter-up">355</h1>
                         </div>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
                             <i class="fa fa-award text-primary"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">321</h1>
+                            <h5 class="text-white mb-0">Testimonial</h5>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">111</h1>
                         </div>
                     </div>
                 </div>
@@ -62,12 +62,12 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">The Best Customized Lightning Solution With 10 Years of Experience</h1>
+                        <h1 class="mb-0">Innovators in Customized Lighting and Smart Automation Solutions</h1>
                     </div>
-                    <p class="mb-4">Experience and play around with different lighting moods, connect your devices to a single source, control them from your phone. Once you’ve got a feel, fill out the form. Give your house that perfect ambience, get professional lighting solutions consultation from our experts for free.</p>
+                    <p class="mb-4">Welcome to Vrisa India, your premier destination for customized lighting solutions and comprehensive home and office automation projects. With 7 years of industry experience, we pride ourselves on transforming ordinary spaces into extraordinary experiences through innovative design and cutting-edge technology.</p>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Award Winning</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Commitment to Quality</h5>
                             <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Professional Staff</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
@@ -82,7 +82,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class="text-primary mb-0"><a href="tel:7900001165" target="_blank">+91 79000 01165</a></h4>
                         </div>
                     </div>
                     <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request
@@ -105,26 +105,21 @@
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
                 <h5 class="fw-bold text-primary text-uppercase">Why Choose Us</h5>
-                <h1 class="mb-0">We Are Here to Grow Your Business Exponentially</h1>
+                <h1 class="mb-0">Customized LED Lightings & Smart Automation Solution</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4">
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-cubes text-white"></i>
-                            </div>
-                            <h4>Best In Industry</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <img src="{{ asset('img/made_in_india.jpg') }}" style="height:100px; width:120px">
+                            <h4>Made In India</h4>
+                            <p class="mb-0">Exclusively creative and unique designs crafted only in India</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-award text-white"></i>
-                            </div>
-                            <h4>Award Winning</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <img src="{{ asset('img/two_years_warranty.jpg') }}" style="height:150x; width:150px">
+                            <h4>2 Years Warranty Service</h4>
+                            <p class="mb-0">Our promise for repair or replacement against 
+                                manufacturing defects</p>
                         </div>
                     </div>
                 </div>
@@ -137,20 +132,16 @@
                 <div class="col-lg-4">
                     <div class="row g-5">
                         <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-users-cog text-white"></i>
-                            </div>
-                            <h4>Professional Staff</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <img src="{{ asset('img/customized_led_light.jpg') }}" style="height:150x; width:200px">
+                            <h4>Customized LED Lightings</h4>
+                            <p class="mb-0">Our team of skilled designers and craftsmen work
+                                diligently to bring our clients' visions to life</p>
                         </div>
                         <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <h4>24/7 Support</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                            <img src="{{ asset('img/no_middle_man.jpg') }}" style="height:800x; width:120px">
+                            <h4>No Middleman</h4>
+                            <p class="mb-0">We remove the middlemen markups, not the 
+                                quality</p>
                         </div>
                     </div>
                 </div>
@@ -164,8 +155,8 @@
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Order Process</h5>
+                <h1 class="mb-0">Expert setup and maintenance for peace of mind</h1>
             </div>
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
@@ -174,8 +165,8 @@
                         <div class="service-icon">
                             <i class="fa fa-shield-alt text-white"></i>
                         </div>
-                        <h4 class="mb-3">Cyber Security</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed
+                        <h4 class="mb-3">Order Placed</h4>
+                        <p class="m-0">Thank you for placing your order with us. We'll take it from here!
                         </p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -188,8 +179,8 @@
                         <div class="service-icon">
                             <i class="fa fa-chart-pie text-white"></i>
                         </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed
+                        <h4 class="mb-3">Manufacturing</h4>
+                        <p class="m-0">Quality Manufacturing Crafted with Expertise and Care
                         </p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -202,8 +193,8 @@
                         <div class="service-icon">
                             <i class="fa fa-code text-white"></i>
                         </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed
+                        <h4 class="mb-3">Inspection and Testing</h4>
+                        <p class="m-0">Quality Assurance through Advanced Testing Procedures
                         </p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -216,8 +207,8 @@
                         <div class="service-icon">
                             <i class="fab fa-android text-white"></i>
                         </div>
-                        <h4 class="mb-3">Apps Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed
+                        <h4 class="mb-3">Shipping</h4>
+                        <p class="m-0">From Our Door to Yours: Swift and Secure Shipping
                         </p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -230,8 +221,8 @@
                         <div class="service-icon">
                             <i class="fa fa-search text-white"></i>
                         </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed
+                        <h4 class="mb-3">Happy Customer</h4>
+                        <p class="m-0">Customer Satisfaction Is Our Priority
                         </p>
                         <a class="btn btn-lg btn-primary rounded" href="">
                             <i class="bi bi-arrow-right"></i>
@@ -242,9 +233,8 @@
                     <div
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                         <h3 class="text-white mb-3">Call Us For Quote</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna
-                            stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
+                        <p class="text-white mb-3">Get in touch with us now and receive a detailed quote promptly</p>
+                        <h2 class="text-white mb-0">+91 79000 01165</h2>
                     </div>
                 </div>
             </div>
@@ -343,7 +333,7 @@
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
                         <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                        <h1 class="mb-0">Let's discuss your requirement, Please Feel Free to Contact Us</h1>
                     </div>
                     <div class="row gx-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
@@ -354,10 +344,8 @@
                             </h5>
                         </div>
                     </div>
-                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et
-                        dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et
-                        dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus
-                        sed et. Takimata takimata sanctus sed.</p>
+                    <p class="mb-4">Get started on your project by requesting a detailed quote from our experts. Start your project with confidence. 
+                        Fill out our form to get started..!!</p>
                     <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded"
                             style="width: 60px; height: 60px;">
@@ -365,7 +353,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class="text-primary mb-0">+91 79000 01165</h4>
                         </div>
                     </div>
                 </div>

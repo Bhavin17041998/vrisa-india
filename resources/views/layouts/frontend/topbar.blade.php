@@ -3,8 +3,8 @@
     <div class="row gx-0">
         <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
             <div class="d-inline-flex align-items-center" style="height: 45px;">
-                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>D-12, Opp Sankalp English School, Sawerkar Nager, Maharashtra 400606</small>
-                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91  869-281-4830</small>
+                <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Unit No. 7, 5th Floor, B Building, Gami Industrial Park, Plot C-39 A, Pawane MIDC, Mahape Road, Navi Mumbai, Pin 40071</small>
+                <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 79000 01165</small>
                 <small class="text-light"><i class="fa fa-envelope-open me-2"></i>vrisaindia@gmail.com</small>
             </div>
         </div>

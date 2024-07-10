@@ -28,7 +28,7 @@
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">Plot No 12, D-2, opposite Sankalp English Primary School, Sawarkar Nagar, Patil Nagar, Thane West, Thane, Maharashtra 400606</p>
+                            <p class="mb-0">Unit No. 7, 5th Floor, B Building, Gami Industrial Park, Plot C-39 A, Pawane MIDC, Mahape Road, Navi Mumbai, Pin 400710</p>
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-envelope-open text-primary me-2"></i>
@@ -36,7 +36,7 @@
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+91  790-001-165</p>
+                            <p class="mb-0">+91 79000 01165</p>
                         </div>
                         <div class="d-flex mt-4">
                             <a class="btn btn-primary btn-square me-2" href="#"><i
