@@ -36,7 +36,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class="text-primary mb-0"><a href="tel:7900001165" target="_blank">+91 79000 01165</a></h4>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">info@example.com</h4>
+                            <h4 class="text-primary mb-0">vrisaindia@gmail.com</h4>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Visit our office</h5>
-                            <h4 class="text-primary mb-0">123 Street, NY, USA</h4>
+                            <h4 class="text-primary mb-0">Unit No. 7, Gami Industrial Park</h4>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9210400141544!2d73.02830467428985!3d19.095160759491755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be795d5c3fdd3cf%3A0x94e82e71712154c7!2sUnit%20No.%207%2C%205th%20Floor%2C%20B%20Building%2C%20Gami%20Industrial%20Park%2C%20Plot%20C-39%20A%2C%20Pawane%20MIDC%2C%20Mahape%20Road%2C%20Navi%20Mumbai%2C%20Maharashtra%2040071!5e0!3m2!1sen!2sin!4v1690124670280!5m2!1sen!2sin"
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>
@@ -104,20 +104,14 @@
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
+                    @foreach ($clientLogo as $item)
+                        <img src="{{ asset('storage/'. $item->image) }}" alt="">
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
-    <!-- Vendor End -->    
+    <!-- Vendor End -->
 
     <script type="text/javascript">
         // $('.load').show();

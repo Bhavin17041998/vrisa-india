@@ -1,0 +1,4 @@
+.fi-sidebar {
+    @apply bg-red-500; /* Default background color */
+    @apply lg:bg-green-500; /* Background color for large screens (>= 1024px) */
+}

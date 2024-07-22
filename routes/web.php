@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -15,21 +16,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', [FrontendController::class, 'index'])->name('home');
 
-Route::get('/contact-us', function () {
-    return view('contact');
-})->name('contact_us');
+Route::get('/contact-us', [FrontendController::class, 'contactUs'])->name('contact_us');
+Route::get('/about-us', [FrontendController::class, 'aboutUs'])->name('about_us');
+Route::get('/services', [FrontendController::class, 'services'])->name('services');
 
-Route::get('/about-us', function () {
-    return view('about_us');
-})->name('about_us');
+// Route::get('/about-us', function () {
+//     return view('about_us');
+// })->name('about_us');
 
-Route::get('/services', function () {
-    return view('service');
-})->name('services');
+// Route::get('/services', function () {
+//     return view('service');
+// })->name('services');
+
+
+Route::get('/projects', [FrontendController::class, 'projects'])->name('projects');
 
 Route::post('mail_sent', [HomeController::class, 'formSubmit'])->name('submitForm');
 

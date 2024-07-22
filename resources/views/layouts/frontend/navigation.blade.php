@@ -13,6 +13,7 @@
                 <a href="{{ route('home') }}" class="nav-item nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
                 <a href="{{ route('about_us') }}" class="nav-item nav-link {{ request()->routeIs('about_us') ? 'active' : '' }}">About</a>
                 <a href="{{ route('services') }}" class="nav-item nav-link {{ request()->routeIs('services') ? 'active' : '' }}">Services</a>
+                <a href="{{ route('projects') }}" class="nav-item nav-link {{ request()->routeIs('projects') ? 'active' : '' }}">Projects</a>
 
                 {{-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
