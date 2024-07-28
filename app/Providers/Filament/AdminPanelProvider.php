@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Resources\AdminResource\Widgets\EnquiryOverview;
 use Filament\Facades\Filament;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
@@ -18,6 +19,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use View;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -31,16 +33,22 @@ class AdminPanelProvider extends PanelProvider
             ->colors([
                 'primary' => '#d81324',
             ])
+            ->brandName('Vrisa India')
+            ->brandLogo(asset('img/logos/logo-no-background.svg'))
+            ->brandLogoHeight('3rem')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
                 Pages\Dashboard::class,
             ])
+            ->renderHook('panels::footer', function () {
+                return view('vendor.filament.custom-footer');
+            })
             ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->sidebarCollapsibleOnDesktop()
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
+                EnquiryOverview::class
+                // Widgets\AccountWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,

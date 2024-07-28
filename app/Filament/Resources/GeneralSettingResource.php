@@ -19,15 +19,18 @@ class GeneralSettingResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-wrench-screwdriver';
 
+    protected static ?int $navigationSort = 9;
+
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Section::make('Edit General Settings')
+                Section::make('General Settings')
                 ->schema([
                     TextInput::make('email')->required(),
                     TextInput::make('phone_no')->required(),
-                    FileUpload::make('favicon_immage')
+                    FileUpload::make('favicon_image')
                         ->image()
                         ->imageEditor()
                         ->required(),
@@ -35,13 +38,15 @@ class GeneralSettingResource extends Resource
                         ->image()
                         ->imageEditor()
                         ->required(),
+                    Textarea::make('short_address')
+                        ->required(),
                     Textarea::make('address')
                         ->required(),
                     TextInput::make('facebook_link')->required(),
                     TextInput::make('twitter_link'),
                     TextInput::make('instagram_link'),
                     TextInput::make('linkedin_link'),
-                ])->columns(2),
+                ])->columns(3),
             ]);
     }
 
@@ -70,6 +75,19 @@ class GeneralSettingResource extends Resource
         return [
             //
         ];
+    }
+
+    public static function getNavigationUrl(): string
+    {
+        // Assuming you want to edit the first record in the GeneralSetting model
+        $firstRecord = GeneralSetting::first();
+        
+        if ($firstRecord) {
+            return Pages\EditGeneralSetting::getUrl(['record' => $firstRecord->id]);
+        }
+
+        // If no record exists, redirect to the create page or list page as a fallback
+        return Pages\ListGeneralSettings::getUrl();
     }
 
     public static function getPages(): array

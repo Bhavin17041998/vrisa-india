@@ -48,7 +48,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0"><a href="tel:7900001165" target="_blank">+91 79000 01165</a></h4>
+                            <h4 class="text-primary mb-0"><a href="tel:{{ str_replace(' ', '', $general_settings->phone_no) }}" target="_blank">+91 {{ $general_settings->phone_no }}</a></h4>
                         </div>
                     </div>
                     <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request

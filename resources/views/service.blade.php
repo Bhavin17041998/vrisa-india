@@ -104,7 +104,7 @@
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                         <h3 class="text-white mb-3">Call Us For Quote</h3>
                         <p class="text-white mb-3">Get in touch with us now and receive a detailed quote promptly</p>
-                        <h2 class="text-white mb-0">+91 79000 01165</h2>
+                        <h2 class="text-white mb-0">+91 {{ $general_settings->phone_no }}</h2>
                     </div>
                 </div>
             </div>

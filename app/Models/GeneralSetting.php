@@ -9,5 +9,5 @@ class GeneralSetting extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['favicon_image', 'logo_image', 'address', 'email', 'phone_no', 'facebook_link', 'twitter_link', 'instagram_link', 'linkedin_link'];
+    protected $fillable = ['favicon_image', 'logo_image', 'address', 'email', 'phone_no', 'facebook_link', 'twitter_link', 'instagram_link', 'linkedin_link', 'short_address'];
 }   

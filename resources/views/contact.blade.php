@@ -36,7 +36,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0"><a href="tel:7900001165" target="_blank">+91 79000 01165</a></h4>
+                            <h4 class="text-primary mb-0"><a href="tel:{{ str_replace(' ', '', $general_settings->phone_no) }}" target="_blank">+91 {{ $general_settings->phone_no }}</a></h4>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">vrisaindia@gmail.com</h4>
+                            <h4 class="text-primary mb-0">{{ $general_settings->email }}</h4>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Visit our office</h5>
-                            <h4 class="text-primary mb-0">Unit No. 7, Gami Industrial Park</h4>
+                            <h4 class="text-primary mb-0">{{ $general_settings->short_address }}</h4>
                         </div>
                     </div>
                 </div>

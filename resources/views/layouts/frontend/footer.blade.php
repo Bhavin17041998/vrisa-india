@@ -1,4 +1,7 @@
 <!-- Footer Start -->
+@php
+    $general_setttings = DB::table('general_settings')->first(); 
+@endphp
 <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp footer" data-wow-delay="0.1s">
     <div class="container">
         <div class="row gx-5">
@@ -28,24 +31,24 @@
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-geo-alt text-primary me-2"></i>
-                            <p class="mb-0">Unit No. 7, 5th Floor, B Building, Gami Industrial Park, Plot C-39 A, Pawane MIDC, Mahape Road, Navi Mumbai, Pin 400710</p>
+                            <p class="mb-0">{{ $general_setttings->address }}</p>
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-envelope-open text-primary me-2"></i>
-                            <p class="mb-0">nathgroupindustries@gmail.com</p>
+                            <p class="mb-0">{{ $general_setttings->email }}</p>
                         </div>
                         <div class="d-flex mb-2">
                             <i class="bi bi-telephone text-primary me-2"></i>
-                            <p class="mb-0">+91 79000 01165</p>
+                            <p class="mb-0">+91 {{ $general_setttings->phone_no }}</p>
                         </div>
                         <div class="d-flex mt-4">
                             <a class="btn btn-primary btn-square me-2" href="#"><i
                                     class="fab fa-twitter fw-normal"></i></a>
                             <a class="btn btn-primary btn-square me-2" href="#"><i
                                     class="fab fa-facebook-f fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square me-2" href="#"><i
+                            <a class="btn btn-primary btn-square me-2" href="{{ $general_setttings->linkedin_link }}"><i
                                     class="fab fa-linkedin-in fw-normal"></i></a>
-                            <a class="btn btn-primary btn-square" href="https://www.instagram.com/vrisaindia/?igsh=ZGNjOWZkYTE3MQ%3D%3D" target="_blank"><i
+                            <a class="btn btn-primary btn-square" href="{{ $general_setttings->instagram_link }}" target="_blank"><i
                                     class="fab fa-instagram fw-normal"></i></a>
                         </div>
                     </div>
@@ -54,17 +57,19 @@
                             <h3 class="text-light mb-0">Quick Links</h3>
                         </div>
                         <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('home') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('about_us') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                            <a class="text-light mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('services') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="{{ route('projects') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Projects</a>        
+                            {{-- <a class="text-light mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
                             <a class="text-light mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-light" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> --}}
+                            <a class="text-light" href="{{ route('contact_us') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                         </div>
                     </div>
@@ -73,17 +78,19 @@
                             <h3 class="text-light mb-0">Popular Links</h3>
                         </div>
                         <div class="link-animated d-flex flex-column justify-content-start">
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('home') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('about_us') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                            <a class="text-light mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                            <a class="text-light mb-2" href="#"><i
+                            <a class="text-light mb-2" href="{{ route('services') }}"><i
+                                class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                            <a class="text-light mb-2" href="{{ route('projects') }}"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Projects</a>    
+                            {{-- <a class="text-light mb-2" href="#"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
                             <a class="text-light mb-2" href="#"><i
-                                    class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                            <a class="text-light" href="#"><i
+                                    class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a> --}}
+                            <a class="text-light" href="{{ route('contact_us') }}"><i
                                     class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                         </div>
                     </div>

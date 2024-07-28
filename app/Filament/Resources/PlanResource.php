@@ -27,6 +27,8 @@ class PlanResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-currency-rupee';
 
+    protected static ?int $navigationSort = 4;
+
     public static function form(Form $form): Form
     {
         return $form

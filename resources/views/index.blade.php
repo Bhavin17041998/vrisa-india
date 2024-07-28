@@ -82,7 +82,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0"><a href="tel:7900001165" target="_blank">+91 79000 01165</a></h4>
+                            <h4 class="text-primary mb-0"><a href="tel:{{ str_replace(' ', '', $general_settings->phone_no) }}" target="_blank">+91 {{ $general_settings->phone_no }}</a></h4>
                         </div>
                     </div>
                     <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Request
@@ -234,7 +234,7 @@
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
                         <h3 class="text-white mb-3">Call Us For Quote</h3>
                         <p class="text-white mb-3">Get in touch with us now and receive a detailed quote promptly</p>
-                        <h2 class="text-white mb-0">+91 79000 01165</h2>
+                        <h2 class="text-white mb-0">+91 {{ $general_settings->phone_no }}</h2>
                     </div>
                 </div>
             </div>
@@ -302,7 +302,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+91 79000 01165</h4>
+                            <h4 class="text-primary mb-0">+91 {{ $general_settings->phone_no }}</h4>
                         </div>
                     </div>
                 </div>
